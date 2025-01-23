@@ -75,8 +75,14 @@
 // // console.log(x);
 // outer()
 // console.log(!!"asd");
-for (var i = 0; i < 3000000; i++) {
-    setTimeout(function() {
-    console.log(i); // Prints '3' three times because i is shared across all iterations
-    }, 1000);
-    }
+// for (var i = 0; i < 3000000; i++) {
+//     setTimeout(function() {
+//     console.log(i); // Prints '3' three times because i is shared across all iterations
+//     }, 1000);
+//     }
+
+console.log(isNaN(null));
+console.log(isNaN(undefined));
+console.log(Boolean(undefined));
+console.log(typeof(NaN));
+console.log(NaN === "text");

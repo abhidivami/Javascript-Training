@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script type="module">
+        import { sayHi } from './closures.js';
+        document.body.innerHTML = sayHi('Johnny');
+        
+        import { add, sub } from './closures.js';
+        document.body.innerHTML += `<br>Add result: ${add(5, 6)}`; // Displays the result of add
+        document.body.innerHTML += `<br>Subtract result: ${sub(5, 6)}`;
+
+        // import { add, sub } from './closures.js';
+        // document.body.innerHTML = add(5,6);
+        // document.body.innerHTML = sub(5,6);
+    </script>
+</body>
+</html>
