@@ -1,23 +1,28 @@
  let user={
     name : "Abhilash",
-    age : 20
+    lastname : "Adunuri",
+    age : 20,
+    getname : function(){
+        return this.name+" "+this.lastname;
+    }
 };
 console.log(user.name);
+console.log(user.getname());
 
-user.isIntern = true;
-user.isPresent = true;
+// user.isIntern = true;
+// user.isPresent = true;
 
-console.log(user);
+// console.log(user);
 
-delete user.isIntern;
-console.log(user);
+// delete user.isIntern;
+// console.log(user);
 
-user['like Birds'] = true;
+// user['like Birds'] = true;
 
-console.log(user);
+// console.log(user);
 
-delete user;
-console.log(user);
+// delete user;
+// console.log(user);
 
 // const readline = require('readline');
 // const rl = readline.createInterface({
@@ -68,7 +73,7 @@ console.log(user);
 // //ii): use JSON.stringify(objname) 
 
 // //2
-// let dummy = new Object();
+//let dummy = new Object();
 // if(JSON.stringify(dummy)=='{}')
 //     console.log("Empty Object");
 // else
