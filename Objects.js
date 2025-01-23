@@ -1,13 +1,13 @@
- let user={
-    name : "Abhilash",
-    lastname : "Adunuri",
-    age : 20,
-    getname : function(){
-        return this.name+" "+this.lastname;
-    }
-};
-console.log(user.name);
-console.log(user.getname());
+//  let user={
+//     name : "Abhilash",
+//     lastname : "Adunuri",
+//     age : 20,
+//     getname : function(){
+//         return this.name+" "+this.lastname;
+//     }
+// };
+// console.log(user.name);
+// console.log(user.getname());
 
 // user.isIntern = true;
 // user.isPresent = true;
@@ -101,5 +101,23 @@ console.log(user.getname());
 // };
 // console.log(multiplenumeric(SystemData));
 
+// let x = this;
+// console.log(x);
+let user = {
+    firstName: "Ilya",
+    sayHi() {
+      let arrow = () => console.log(this.firstName);
+      arrow();
+    }
+  };
+  
+  user.sayHi();
 
-
+  function greet(){
+    console.log(`Your name is ${this.name} and your age is ${this.age}`);
+  }
+  const person={
+    name : "john",
+    age : 20,
+  };
+  greet.call(person);
